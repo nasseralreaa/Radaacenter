@@ -1,0 +1,181 @@
+<!doctype html>
+<head>
+    <html lang=ar>
+    <meta charset=UTF-8>
+    <title data-network-name>شبكة رداع المركزية</title>
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <meta name=theme-color content=#0d41bcf0>
+    <link rel="shortcut icon" type=image/x-icon href=favicon.ico>
+    <link rel=stylesheet href=css/bootstrap.min.css>
+    <link rel=stylesheet href=css/fontello.min.css>
+    <link rel=stylesheet href=css/style.min.css>
+    <style>
+        .im1::before { content: "اهلا بك في شبكة رداع المركزية" }
+        .im2::before { content: "استقرار في النت" }
+        .im3::before { content: "رصيد نت أكثر من اي شبكة" }
+        .im4::before { content: "وقت أستخدام أطول" }
+        .im5::before { content: "سرعة في النت" }
+        .box { text-align: center; position: relative; top: 80px; width: 120px; height: 80px; transform-style: preserve-3d; animation: animate 40s linear infinite }
+        .box:hover { animation-play-state: paused }
+        @keyframes animate { 100% { transform: perspective(1000px) rotateY(0deg) } 0% { transform: perspective(1000px) rotateY(360deg) } }
+        .box span { position: absolute; top: 0; left: 0; width: 100%; height: 100%; transform-origin: center; transform-style: preserve-3d; transform: rotateY(calc(var(--i) * 36deg)) translateZ(300px); -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, rgb(4 4 4 / .267)) }
+        .box span img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; transition: 0.5s; border-radius: 15px }
+        .box span { border-radius: 15px }
+        .box span img::before { position: absolute; color: #fff; font-size: 14px !important; display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; background: #4e6293; background: linear-gradient(135deg,#10474a 0%,#0d777d 50%,#099fa7 100%); box-shadow:0 0 20px #4e6293; top:50%; left:50%; transform:translate(-50%,-50%)}
+        .add { right: 0; position: absolute; top: 142px; overflow:hidden; height: 220px; border-radius: 110% 0 0 85%; width:100% }
+
+       
+    </style>
+</head>
+<body>
+<div class=cyber-bg>
+    <div class=ramadan-moon></div>
+    <div class=shooting-star></div>
+</div>
+<div class=container>
+    <div class=screen>
+        <div class=screen-content>
+            <div class=login id=login>
+                <div class="logo screen-background-shape"></div>
+                $(if chap-id)
+                <form name=sendin action=$(link-login-only) method=post style=display:none>
+                    <input type=hidden name=username>
+                    <input type=hidden name=password>
+                    <input type=hidden name=dst value=$(link-orig)>
+                    <input type=hidden name=popup value=true>
+                    <input type=hidden id=domain name=domain>
+                    </form>
+                <script src=/md5.js></script>
+                <script>
+                    function doLogin() {
+                        var username = document.login.username.value;
+                        var speedValue = document.login.speed.value; // القيمة من قائمة السرعة
+
+                        // إذا كان اسم المستخدم يبدأ بالحرف 'a' (غير حساس لحالة الأحرف)
+                        if (username.toLowerCase().startsWith('a')) {
+                            document.sendin.username.value = username;
+                            document.sendin.password.value = hexMD5('$(chap-id)' + '' + '$(chap-challenge)');
+                            document.sendin.domain.value = ""; // تحديث: تعيين السرعة لـ 15M مباشرةً
+                        } else {
+                            // وإلا، استخدم السرعة المختارة من القائمة
+                            document.sendin.username.value = username;
+                            document.sendin.password.value = hexMD5('$(chap-id)' + '' + '$(chap-challenge)');
+                            document.sendin.domain.value = speedValue;
+                        }
+                        document.sendin.submit();
+                        return false; // يمنع الإرسال الافتراضي للنموذج
+                    }
+                </script>
+                $(endif)
+                <div class=network-prefix>⚡شبكة⚡</div>
+                <div class=network-name><span data-network-name style="font-size: 30px;">رداع المركزية</span></div>
+                <div class=date-field data-show-date-field><span hot-date></span>,الموافق <span hot-hijri-date hot-adjust-days=-1></span></div>
+                <div class=text-slider>
+                    <p>مرحباً 👋 بك في شبكة رداع المركزية</p>
+                    <p>أذكر الله { أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ }</p>
+                    <p>ننصح بالاحتفاظ بالكرت حتى انتهائه فنحن غير مسؤولين عن نسيانه</p>
+                </div>
+                <span class="add">
+                    <div class="ads">
+                        <div class="box">
+                            <span style="--i:1"><img class="im1" src="adimg/1.jpg"></span>
+                            <span style="--i:2"><img class="im2" src="adimg/2.jpg"></span>
+                            <span style="--i:3"><img class="im3" src="adimg/3.jpg"></span>
+                            <span style="--i:4"><img class="im4" src="adimg/4.jpg"></span>
+                            <span style="--i:5"><img class="im5" src="adimg/5.jpg"></span>
+                            <span style="--i:5"><img class="im1" src="adimg/1.jpg"></span>
+                            <span style="--i:7"><img class="im2" src="adimg/2.jpg"></span>
+                            <span style="--i:8"><img class="im3" src="adimg/3.jpg"></span>
+                            <span style="--i:9"><img class="im4" src="adimg/4.jpg"></span>
+                            <span style="--i:10"><img class="im5" src="adimg/5.jpg"></span>
+                            <span style="--i:11"><img class="im1" src="adimg/1.jpg"></span>
+                            <span style="--i:12"><img class="im2" src="adimg/2.jpg"></span>
+                            <span style="--i:13"><img class="im3" src="adimg/3.jpg"></span>
+                            <span style="--i:14"><img class="im4" src="adimg/4.jpg"></span>
+                            <span style="--i:15"><img class="im5" src="adimg/5.jpg"></span>
+                        </div>
+                    </div>
+                </span>
+                <form class=login-form name=login action=$(link-login-only) method=post $(if chap-id) onSubmit="return doLogin()" $(endif)>
+                    <div id=postText></div>
+                    <div id=textDisplay></div>
+                    <br>
+                    <div id=myModal class=modal>
+                        <div class=modal-content>
+                            <div id=loader class=loader></div>
+                            <p>جار اعاده تسجيل الدخول وقت الانتظار المتبقي<br><span id=remainingTimeSpan></span> ثانية يرجى الانتظار</p>
+                        </div>
+                    </div>
+                    <input type=hidden name=dst value=$(link-orig)>
+                    <input type=hidden name=popup value=true>
+
+                    <label class=speed-select>
+                        إختر سرعة الاتصال
+                        <button type="button" id="openSpeedModalBtn" class="speed-option-button" style="width: 100%; background-color: #007bff;">
+                            </button>
+                        <select id=speed name=speed class=select>
+                            <option value=""> سرعة افتراضية</option>
+                            <option value=512k>سرعة اقتصادية</option>
+                            <option value=760k selected>سرعة عادية</option>
+                            <option value=1024k>سرعة متوسطه</option>
+                            <option value=4M>سرعة عالية</option>
+                            <option value=10M>سرعة عالية جدا</option>
+                        </select>
+                    </label>
+
+                    <div class=login-field>
+                        <i class="login-icon fas icon-user"></i>
+                        <input name=username id=usernameInput class=login-input placeholder="ادخل رمز الكرت" oninput="convertToEnglishNumbers(this)" autocomplete=on>
+                    </div>
+                    <div class="login-field password-field">
+                        <i class="login-icon fas icon-lock"></i>
+                        <input name=password id=passwordInput class=login-input placeholder="ادخل كلمة السر هنا">
+                    </div>
+                    <select class=speed id=usernameDropdown onchange=fillInputField()></select>
+                    <button class="button login-submit" onclick=saveUsernameAndPassword() parent-id=mah enable-hot-cookie style="margin:2rem 18px 20px;width:11.5rem">
+                        <div class=button-text></div>
+                        تسجيل الدخول</button>
+                </form>
+            </div>
+            <div class=social-login>
+                <a style=color:red;text-decoration:none href=price.html><button class="button app-submit price-icon" style=margin-left:1em parent-id=price data-price-button>الباقات</button></a>
+                <a style=color:red;text-decoration:none href=points.html><button class="button app-submit price-icon" style=margin-right:1em parent-id=price data-price-button>نقاط البيع</button></a>
+                <div class=bvgf></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </div>
+</div>
+
+$(if error)
+<div id=alert-back3 onclick='document.getElementById("alert-back3").style.display="none"'>
+    <div class=alert3>
+        <span class=closebtn3><strong style=font-size:2rem>×</strong></span><strong>خطأ!</strong>
+        </script>
+        <div id=btn-send></div>
+        <script>
+            !function () {
+                let e = `<a href="sms:+967772204751?body=${texterror} ----- رقم الكرت  $(username)"><button class="app-submit" style="height: 2.5rem;\n    width: 53%; background: linear-gradient(45deg, #476e96, #324d68);\n    font-size: 0.8rem;">إرسال الخطأ</button></a>\n`;
+                document.querySelectorAll("#btn-send").forEach((n => {
+                    n.innerHTML = e
+                }))
+            }()
+        </script>
+    </div>
+</div>
+$(endif)
+<script>
+    function convertToEnglishNumbers(input) {
+        const arabicToEnglishMap = { '٠': '0', '١': '1', '٢': '2', '٣': '3', '٤': '4', '٥': '5', '٦': '6', '٧': '7', '٨': '8', '٩': '9' };
+        input.value = input.value.replace(/[٠-٩]/g, function (d) { return arabicToEnglishMap[d] });
+    }
+</script>
+<script src=77.js></script>
+<script src=hotBlocker.min.js login-error=$(error) try-count=5 block-time=1></script>
+<script src=js/script.js></script>
+<script src=js/hotOptions.min.js></script>
+</body>
+</html>
